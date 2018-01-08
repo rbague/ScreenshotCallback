@@ -1,6 +1,6 @@
 # ScreenshotCallback
 
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg?style=flat-squ)](https://opensource.org/licenses/Apache-2.0) ![API](https://img.shields.io/badge/API-19%2B-green.svg) [![1.0](https://jitpack.io/v/rbague/ScreenshotCallback.svg)](https://jitpack.io/#rbague/ScreenshotCallback) [![GitHub issues](https://img.shields.io/github/issues/rbague/ScreenshotCallback.svg)](https://github.com/rbague/ScreenshotCallback/issues)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg?style=flat-squ)](https://opensource.org/licenses/Apache-2.0) ![API](https://img.shields.io/badge/API-19%2B-green.svg) [![1.0](https://jitpack.io/v/rbague/ScreenshotCallback.svg)](https://jitpack.io/#rbague/ScreenshotCallback) [![GitHub issues](https://img.shields.io/github/issues/rbague/ScreenshotCallback.svg)](https://github.com/rbague/ScreenshotCallback/issues)  
 ScreenshotCallback is a library to let the app know when the user has taken a screenshot.
 Have a look at the [javadocs](https://rbague.github.io/ScreenshotCallback/).
 

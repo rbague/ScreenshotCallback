@@ -44,7 +44,7 @@ Add it in the dependencies section of your project's `pom.xml`:
 ```
 
 ### Usage
-Add this permission to `AndroidManifest.xml`:
+Add this permission to `AndroidManifest.xml` **and remeber to request it**:
 ```xml
 <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
 ```

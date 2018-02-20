@@ -75,24 +75,23 @@ public abstract class ScreenshotObserver {
 
                     @Override
                     public void onEvent(int event, final @Nullable String path) {
-                        if (!TextUtils.isEmpty(path) && event == CREATE) {
-                            if (!mLastObservedPath.equalsIgnoreCase(path)) {
-                                final File screenshot = new File(dir.getPath(), path);
-                                if (screenshot.exists() && !screenshot.isDirectory() && screenshot.isFile()) {
-                                    handler.post(new Runnable() {
-                                        @Override
-                                        public void run() {
-                                            onScreenshotTaken(screenshot.getPath());
-                                        }
-                                    });
-                                    mLastObservedPath = path;
-                                }
+                        if (!TextUtils.isEmpty(path) && (event & CREATE) == CREATE && !mLastObservedPath.equalsIgnoreCase(path)) {
+                            final File screenshot = new File(dir.getPath(), path);
+                            if (screenshot.exists() && !screenshot.isDirectory() && screenshot.isFile()) {
+                                handler.post(new Runnable() {
+                                    @Override
+                                    public void run() {
+                                        onScreenshotTaken(screenshot.getPath());
+                                    }
+                                });
+                                mLastObservedPath = path;
                             }
                         }
                     }
                 });
             }
         }
+
     }
 
     /**
